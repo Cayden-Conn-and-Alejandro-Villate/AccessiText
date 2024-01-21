@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+    <title>Customizable Reading Window</title>
+    <link rel="icon" type="image.png" href="../icons/hand icon.png" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <header>
+
+
+
+    <div id="dropdown-menus-container">
+      <!--Font Drop Down-->
+      <div>
+        <label for="Font">Font:</label>
+        <select id="different-fonts" for="Different Fonts" onchange="updateFont()">
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Comic Neue">Comic Neue</option>
+        </select>
+      </div>
+      <!--Font Bold Drop Down-->
+      <div>
+        <label for="Font Style">Font Style:</label>
+        <select id="font-style" for="Font Weight" onchange="updateFontStyle()">
+          <option value="Normal">Normal</option>
+          <option value="Bold">Bold</option>
+          <option value="Italic">Italic</option>
+          <option value="Underline">Underline</option>
+        </select>
+      </div>
+      <!--Font Size Drop Down-->
+      <div style="display: flex; gap: 4px;">
+        <label for="Font Size">Font Size:</label>
+        <div class="font-size-selector">
+          <input
+            oninput="updateFontSize()"
+            list="fontSizes"
+            id="font-size"
+          />
+          <datalist id="fontSizes">
+            <option value="8"></option>
+            <option value="10"></option>
+            <option value="12"></option>
+            <option value="16"></option>
+            <option value="20"></option>
+            <option value="24"></option>
+            <option value="30"></option>
+            <option value="36"></option>
+            <option value="48"></option>
+            <option value="60"></option>
+            <option value="300"></option>
+          </datalist>
+        </div>
+      </div>
+          <!--Line Spacing Drop Down-->
+          <div>
+            <label for="Font">Line Spacing:</label>
+            <select id="line-spacing" for="Line Spacing">
+              <option value="1">1.00</option>
+              <option value="1.15">1.15</option>
+              <option value="2">2.00</option>
+            </select>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+  </header>
+  <body>
+    <div id="screen">
+      <div id="interface">
+        <div id="drag-hand-container">
+          <img src="../icons/hand icon.png" id="drag-hand" />
+        </div>
+        <textarea
+          id="reading-window"
+          type="text"
+          placeholder="Input Your Text Here"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>

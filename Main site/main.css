@@ -1,0 +1,79 @@
+header{
+  height: 36px;
+  width:auto;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-top:12px;
+  background-color:blue;
+}
+
+#font-size {
+  width: 40px;
+}
+#dropdown-menus-container {
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  width: 770px;
+  justify-content:space-evenly;
+  align-items:center;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px rgb(182, 182, 182);
+  gap: 30px;
+  background-color:red;
+}
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0px;
+}
+
+#screen {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: calc(100vh - 56px);
+
+  background-color: lightskyblue;
+}
+
+#interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#reading-window {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  border: 1px solid rgb(33, 33, 33);
+  border-radius: 3px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+  appearance: none;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#drag-hand-container {
+  height:32px;
+  width:32px;
+}
+#drag-hand-container:hover {
+  cursor: grab;
+}
+
+#drag-hand-container:active,
+#drag-hand-container:focus {
+  cursor: grabbing;
+}
+
+#drag-hand {
+  height: 30px;
+}
+
+
