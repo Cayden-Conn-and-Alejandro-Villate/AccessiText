@@ -5,11 +5,19 @@ header{
   align-items: center;
   justify-content:center;
   margin-top:12px;
-  background-color:blue;
+  background-color: hsl(0, 0%, 15%);
 }
 
 #font-size {
   width: 40px;
+}
+#drag-menu {
+  display: flex;
+  height: 50px;
+  width: 200px;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 20px;
+  position: fixed;
 }
 #dropdown-menus-container {
   display: flex;
@@ -20,14 +28,15 @@ header{
   align-items:center;
   border: 1.5px solid black;
   border-radius: 3px;
-  box-shadow: 5px 5px 10px rgb(182, 182, 182);
+  /*box-shadow: 5px 5px 10px rgb(182, 182, 182);*/
   gap: 30px;
-  background-color:red;
+  background-color:white;
 }
   
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin:0px;
+  background-color: hsl(0, 0%, 15%);
 }
 
 #screen {
@@ -37,7 +46,7 @@ body {
   margin-top: 20px;
   height: calc(100vh - 56px);
 
-  background-color: lightskyblue;
+  background-color: hsl(0, 0%, 15%);
 }
 
 #interface {
@@ -57,23 +66,19 @@ body {
   appearance: none;
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 90px;
 }
 
-#drag-hand-container {
-  height:32px;
-  width:32px;
-}
-#drag-hand-container:hover {
+
+#drag-menu:hover {
   cursor: grab;
 }
 
-#drag-hand-container:active,
-#drag-hand-container:focus {
+#drag-menu:active,
+#drag-menu:focus {
   cursor: grabbing;
 }
 
-#drag-hand {
-  height: 30px;
-}
 
 

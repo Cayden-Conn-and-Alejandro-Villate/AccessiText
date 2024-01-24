@@ -7,6 +7,7 @@ const fontSize = document.getElementById("font-size");
 const body = document.body
 const font = document.getElementById("different-fonts")
 const fontStyle = document.getElementById('font-style')
+const lineSpacing = document.getElementById('line-spacing')
 
 
 const updateFontSize = () => {
@@ -25,7 +26,6 @@ const updateFontSize = () => {
 
 const updateFont = () => {
   const newFont = font.value
-  body.style.fontFamily = newFont
   readingWindow.style.fontFamily = newFont
 }
 
@@ -52,7 +52,7 @@ const updateFontStyle = () => {
 }
 
 
-///New function: EDIT LINE SPACING
 const updateLineSpacing = () => {
-  console.log('change')
+  const newLineSpacing = parseFloat(lineSpacing.value) + 0.2
+  readingWindow.style.lineHeight = newLineSpacing
 }

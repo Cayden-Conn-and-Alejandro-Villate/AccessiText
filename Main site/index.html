@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="main.css" />
     <script defer src="main.js"></script>
-    <title>Customizable Reading Window</title>
+    <title>AccessiText</title>
     <link rel="icon" type="image.png" href="../icons/hand icon.png" />
 
     <!--Fonts-->
@@ -14,7 +14,7 @@
   <header>
 
 
-
+    
     <div id="dropdown-menus-container">
       <!--Font Drop Down-->
       <div>
@@ -62,7 +62,7 @@
           <!--Line Spacing Drop Down-->
           <div>
             <label for="Font">Line Spacing:</label>
-            <select id="line-spacing" for="Line Spacing">
+            <select id="line-spacing" for="Line Spacing" oninput="updateLineSpacing()">
               <option value="1">1.00</option>
               <option value="1.15">1.15</option>
               <option value="2">2.00</option>
@@ -79,9 +79,14 @@
   <body>
     <div id="screen">
       <div id="interface">
-        <div id="drag-hand-container">
-          <img src="../icons/hand icon.png" id="drag-hand" />
+        <div id = "drag-menu">
+
+
+      
         </div>
+        <!--<div id="drag-hand-container">
+          <img src="../icons/hand icon.png" id="drag-hand" />
+        </div>-->
         <textarea
           id="reading-window"
           type="text"
